@@ -44,7 +44,7 @@ function agregarAmigo(){
       }
  }
 
-// funcion para elegir un amigo aleatorio
+//Funcion para elegir un amigo aleatorio
 function sortearAmigos(){ 
      //Validar que hay amigos disponibles
      if(amigos.length == 0){ //Comprueba si el array 'amigos' esta vacio.
