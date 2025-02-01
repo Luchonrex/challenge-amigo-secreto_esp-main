@@ -1,7 +1,7 @@
 // array para almacenar nombres de amigos
 let amigos =[]
 
-// funcion para agregar un amigo
+// Funcion para agregar un amigo
 function agregarAmigo(){
     const imputAmigo = document.getElementById('amigo');
     const nombreAmigo = inputAmigo.ariaValueMax.trim():
