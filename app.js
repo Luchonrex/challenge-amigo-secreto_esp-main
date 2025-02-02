@@ -3,18 +3,18 @@ let amigos =[]
 
 // Funcion para agregar un amigo
 function agregarAmigo(){
-    const imputAmigo = document.getElementById('amigo');
+    const inputAmigo = document.getElementById('amigo');
     const nombreAmigo = inputAmigo.ariaValueMax.trim();
 
 
   // validar que el campo no este vacio
-  if (nombre == ""){
+  if (nombreAmigo === ""){
        alert("Por Favor, Ingrese un nombre.")
        return;   // Detiene la ejecucion de la funcion
   }
 
   // validar que el nombre no este duplicado
-  if(amigos.incluidos(nombreAmigo)){
+  if(amigos.includes(nombreAmigo)){
        alert(`El nombre ${nombreAmigo}` ya esta en la lista);
        return; 
      }
@@ -23,7 +23,7 @@ function agregarAmigo(){
     amigos.push(nombreAmigo);
 
     //Limpiar el campo de entrada
-    imputAmigo.ariaValu = "";
+    inputAmigo.value = "";
 
     //Actualizar la lista en el HTML
     ActualizarLista();
@@ -61,5 +61,5 @@ function sortearAmigos(){
 
      //Mostrar el resultado en el HTML
      const resultado = document.getElementById('resultado');
-     resultado.innerHTML = 'Amigo sorteado: <strong>${amigoSorteado}<strong>';
+     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}<strong>`;
 }
