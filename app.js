@@ -26,7 +26,7 @@ function agregarAmigo(){
     inputAmigo.value = "";
 
     //Actualizar la lista en el HTML
-    ActualizarLista();
+    actualizarLista();
 }
 
 // funcion para actualizar la lista de amigos en la interfaz
@@ -46,7 +46,7 @@ function agregarAmigo(){
 
 //Funcion para elegir un amigo aleatorio //Funcion para elegir un amigo aleatorio
 
-function sortearAmigos(){ 
+function sortearAmigo(){ 
      //Validar que hay amigos disponibles
      if(amigos.length == 0){ //Comprueba si el array 'amigos' esta vacio.
         alert("No hay amigos disponibles para sortear. agregar al menos uno");
