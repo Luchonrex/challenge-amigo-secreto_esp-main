@@ -4,7 +4,7 @@ let amigos =[]
 // Funcion para agregar un amigo
 function agregarAmigo(){
     const inputAmigo = document.getElementById('amigo');
-    const nombreAmigo = inputAmigo.ariaValueMax.trim();
+    const nombreAmigo = inputAmigo.value.trim();
 
 
   // validar que el campo no este vacio
@@ -61,5 +61,5 @@ function sortearAmigos(){
 
      //Mostrar el resultado en el HTML
      const resultado = document.getElementById('resultado');
-     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}<strong>`;
+     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
 }
